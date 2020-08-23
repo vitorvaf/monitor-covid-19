@@ -1,0 +1,30 @@
+[
+  {
+    "descricao": "Casos Suspeitos",
+    "casos": "5436"
+  },
+  {
+    "descricao": "Casos Descartados",
+    "casos": "1840"
+  },
+  {
+    "descricao": "Casos Confirmados",
+    "casos": "3382"
+  },
+  {
+    "descricao": "Em Análise",
+    "casos": "214"
+  },
+  {
+    "descricao": "Em UTI",
+    "casos": "43"
+  },
+  {
+    "descricao": "Óbitos",
+    "casos": "163"
+  },
+  {
+    "descricao": "Recuperados",
+    "casos": "1204"
+  }
+]

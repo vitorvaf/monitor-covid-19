@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebScrapping dados covid-19 Sercretaria de saúde Pertópolis</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        display: flex;
+        gap: 5rem;
+        flex-wrap: wrap;
+      }
+    </style>
+    <h1>Dados covid-19 Petrópolis</h1>
+    <div class="container"></div>
+    <script>
+      (async () => {
+        /// Ler os arquivos do json
+        var response = await fetch("./dados-covid-petropolis.json");
+        const data = await response.json();
+
+        /// Criar elementos html com os dados
+        const htmlData = data.map(
+          ({ descricao, casos }) =>
+            `<div><h2>${descricao}</h2><p>${casos}</p></div>`
+        );
+
+        /// inputar html na pǵina
+        document.querySelector(".container").innerHTML = htmlData;
+        
+      })();
+    </script>
+  </body>
+</html>
